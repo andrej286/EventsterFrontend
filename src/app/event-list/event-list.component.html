@@ -1,0 +1,15 @@
+<p>event-list works!</p>
+<h1>
+    {{pageTitel}}
+</h1>
+
+<div class='row'>
+ <div class='col-md-2'>Filter by:</div>
+    <div class='col-md-4'>
+      <input type='text'
+             [(ngModel)]='listFilter' />
+    </div>
+</div>
+<ul *ngFor="let event of filteredEvents">
+    <li>{{event.name}}</li>
+</ul>

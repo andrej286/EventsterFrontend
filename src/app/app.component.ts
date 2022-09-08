@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
+
+import { Component } from "@angular/core";
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.css']
+// })
+// export class AppComponent {
+//   title = 'Eventster';
+// }
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <div><h1>{{title}}</h1>
+  My first component
+  <app-event-list></app-event-list>
+  </div>
+  `
 })
 export class AppComponent {
-  title = 'Eventster';
+  title: string = "Hello app world"
 }

@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventListComponent } from './event-list/event-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
