@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { IEventTicket } from './eventTicket';
-import { EventTicketService } from './eventTicket.service';
+import { IEventTicket } from '../types/eventTicket';
+import { EventTicketService } from '../services/eventTicket.service';
 
 @Component({
-  selector: 'app-event-list',
+  // selector: 'app-event-list',
   templateUrl: './event-list.component.html',
   styleUrls: ['./event-list.component.css']
 })

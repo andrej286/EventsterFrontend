@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { IEventTicket } from "./eventTicket";
+import { IEventTicket } from "../types/eventTicket";
 
 @Injectable({
     providedIn: 'root'

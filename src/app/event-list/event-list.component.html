@@ -11,5 +11,5 @@
     </div>
 </div>
 <ul *ngFor="let event of filteredEvents">
-    <li>{{event.name}}</li>
+    <li><a [routerLink]="['/events', event.id]">{{event.name}}</a></li>
 </ul>

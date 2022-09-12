@@ -16,8 +16,10 @@ import { Component } from "@angular/core";
   template: `
   <div><h1>{{title}}</h1>
   My first component
-  <app-event-list></app-event-list>
+  <li><a routerLink='/events'>Events</a></li>
+  <li><a>Event Details</a></li>
   </div>
+  <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
